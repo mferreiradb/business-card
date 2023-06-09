@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #efebf7;
+    height: 90vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    padding: 2rem;
+    border-radius: 10%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+}
+
+.photo {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #6232b0;
+    position: absolute;
+    bottom: 72%;
+}
+
+.photo img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    max-width: 100%;
+    max-width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.about h3 {
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: small;
+}
+
+.contatc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.icon {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.icon-container:hover svg path{
+    transition: 0.5s;
+    cursor: pointer;
+    fill: #fff;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    background-color: #efebf7;
+    border: 1px solid #6232b0;
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 10%;
+}
+
+.icon-container:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #6232b0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        width: 90%;
+    }
+}
